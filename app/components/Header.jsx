@@ -81,7 +81,7 @@ const Header = ({ heroRef, aboutRef, skillsRef, projectsRef, contactRef }) => {
                 <motion.div initial={{ x: "-100%", opacity: 0 }} animate={{ x: isMenuOpened ? 0 : "-100%", opacity: isMenuOpened ? 1 : 0 }} transition={{ duration: 0.3, ease: "easeInOut" }} className="text-white mobile-menu fixed z-[99999999] w-[65%] h-full">
                     <div className="menu-content w-[80%] mx-auto pt-[30px] flex flex-col gap-2">
                         <div className="menu flex justify-between items-center">
-                            <h1 className="uppercase tracking-[1px]">Menu</h1>
+                            <h1 className="uppercase tracking-[1px]">Mobile Menu</h1>
                             <X strokeWidth={1.5} onClick={() => setIsMenuOpened(false)} className='cursor-pointer' />
                         </div>
                         <span className="line"></span>
