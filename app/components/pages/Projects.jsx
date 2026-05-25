@@ -54,7 +54,7 @@ const Projects = () => {
                     <motion.div variants={items} className="small-title py-2 px-4 font-[600] text-white text-[.8rem] rounded-[30px] flex items-center">
                         Projects
                     </motion.div>
-                    <motion.div variants={items} className="second-title text-white font-[600] text-[3rem] text-center">What I’ve Built</motion.div>
+                    <motion.div variants={items} className="second-title text-white font-[600] text-[2.7rem] md:text-[3rem] text-center">What I’ve Built</motion.div>
                     <motion.p
                         variants={items}
                         className="text-white/50 text-center max-w-lg leading-7"

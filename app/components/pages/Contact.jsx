@@ -32,7 +32,7 @@ const Contact = () => {
                 <motion.div variants={items} className="small-title py-2 px-4 font-[600] text-white text-[.8rem] rounded-[30px] flex items-center">
                     Contact me
                 </motion.div>
-                <motion.div variants={items} className="second-title text-white font-[600] text-[3rem] text-center">Get in Touch</motion.div>
+                <motion.div variants={items} className="second-title text-white font-[600] text-[2.7rem] md:text-[3rem] text-center">Get in Touch</motion.div>
                 <motion.div variants={items} className="main-content w-[70%] mx-auto">
                     <motion.div variants={container} initial="hidden" whileInView="visible" viewport={{ once: true }} className='flex flex-col items-center gap-4'>
                         {contacts.map((contact, i) => (

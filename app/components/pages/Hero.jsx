@@ -89,7 +89,7 @@ const page = ({ projectsRef, contactRef }) => {
                         </motion.div>
                     </div>
                     <motion.div className="image-side" initial={{ y: 20, opacity: 0, scale: 0.97 }} whileInView={{ y: 0, opacity: 1, scale: 1 }} transition={{ duration: 0.3, ease: "easeInOut" }}>
-                        <div className="image-container w-100 rounded-2xl relative">
+                        <div className="image-container w-75 mt-4 md:w-100 md:mt-0 rounded-2xl relative">
                             <span className="rainbow"></span>
                             <div className='w-full h-full overflow-hidden rounded-2xl'>
                                 <img

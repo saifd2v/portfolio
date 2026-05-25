@@ -58,7 +58,7 @@ const Skills = () => {
                         <span>Skills</span>
                     </motion.div>
 
-                    <motion.div variants={items} className="second-title relative text-white font-[600] text-[3rem] text-center">
+                    <motion.div variants={items} className="second-title relative text-white font-[600] text-[2.7rem] md:text-[3rem] text-center">
                         <span>My Skills</span>
                     </motion.div>
                     <motion.p

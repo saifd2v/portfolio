@@ -23,7 +23,7 @@ const About = () => {
                 <motion.div variants={items} className="small-title py-2 px-4 font-[600] text-white text-[.8rem] rounded-[30px] flex items-center">
                     About Me
                 </motion.div>
-                <motion.div variants={items} className="second-title text-white font-[600] text-[3rem] text-center">Get to Know Me</motion.div>
+                <motion.div variants={items} className="second-title text-white font-[600] text-[2.7rem] md:text-[3rem] text-center">Get to Know Me</motion.div>
                 <motion.div variants={items} className="main-content w-[70%] mx-auto">
                     <div className="intro-section text-center mb-6">
                         <motion.div variants={container} initial="hidden" whileInView="visible" viewport={{ once: true, amount: .3 }} className="flex flex-col gap-5 text-gray-400 text-[1.05rem] leading-relaxed max-w-3xl mx-auto">
@@ -49,7 +49,9 @@ const About = () => {
                     </div>
 
                     <div className="stats-section mt-16 mb-8">
-                        <motion.div variants={container} initial="hidden" whileInView="visible" viewport={{ once: true, amount: .3 }} className="stats-grid grid grid-cols-2 gap-6 max-w-4xl mx-auto items-center">
+                        <motion.div variants={container} initial="hidden" whileInView="visible" viewport={{ once: true, amount: .3 }}
+                            className="flex flex-col lg:flex-row gap-8 md:gap-4 items-center justify-between w-1/2 mx-auto"
+                        >
                             <div variants={items} className="stat-item text-center">
                                 <div className="stat-number text-white text-[3rem] font-bold leading-none">1+</div>
                                 <p className="stat-label text-sm mt-2">Years Experience</p>
