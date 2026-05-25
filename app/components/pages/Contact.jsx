@@ -21,7 +21,7 @@ const items = {
 
 const Contact = () => {
     const contacts = [
-        { name: "Email", href: "mailto:miraculouc.ladyblog@gmail.com", item: "miraculouc.ladyblog@gmail.com" },
+        { name: "Email", href: "mailto:contact@saifx.xyz", item: "contact@saifx.xyz" },
         { name: "Whatsapp", href: "https://wa.me/201022051590", item: "+201022051590" },
         { name: "Github", href: "https://github.com/saifd2v", item: "saifd2v" },
     ]

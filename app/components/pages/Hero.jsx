@@ -64,10 +64,10 @@ const page = ({ projectsRef, contactRef }) => {
 
                             <div className="buttons mt-[30px] flex gap-6 flex-col w-full">
                                 <motion.div variants={container} initial="hidden" animate="visible" className="links flex gap-3 flex-col lg:flex-row">
-                                    <motion.button onClick={() => goto(contactRef)} variants={items} whileHover={{ y: -2, transition: { duration: .1, ease: "easeInOut" } }}
+                                    <motion.button onClick={() => goto(contactRef)} variants={items} whileHover={{ y: -3, transition: { duration: .1, ease: "linear" } }}
                                         className="get-in w-full lg:w-[30%] bg-white text-black py-2 px-4 rounded-[30px] text-[.9rem] font-[500] flex items-center cursor-pointer justify-center gap-1">
                                         Get in Touch <ArrowUpRight size={22} strokeWidth={2} /></motion.button>
-                                    <motion.button onClick={() => goto(projectsRef)} variants={items} whileHover={{ y: -2, transition: { duration: .1, ease: "easeInOut" } }}
+                                    <motion.button onClick={() => goto(projectsRef)} variants={items} whileHover={{ y: -3, transition: { duration: .1, ease: "linear" } }}
                                         className="live-demo w-full lg:w-[30%] text-white py-2 px-4 rounded-[30px] text-[.9rem] font-[500] flex gap-1 justify-center cursor-pointer items-center">View
                                         My Projects<i className="fa-solid fa-angle-left"></i><i
                                             className="fa-solid fa-angle-right ml-[-10px]"></i></motion.button>
