@@ -8,12 +8,12 @@ export const metadata = {
   authors: [{ name: 'Saif Mahmoud', url: 'https://saifx.xyz' }],
   openGraph: {
     title: 'Saif - Full-Stack Developer',
-    description: 'Saif Mahmoud – Full-Stack Developer | MERN Stack | Building Modern Web Apps',
+    description: 'Saif Mahmoud – Full-Stack Developer - MERN Stack - Building Modern Web Apps',
     url: 'https://saifx.xyz',
     siteName: 'Saif Portfolio',
     images: [
       {
-        url: '/mask.png',
+        url: '/images/saif.png',
         width: 1200,
         height: 630,
       },
@@ -22,10 +22,10 @@ export const metadata = {
     type: 'website',
   },
   twitter: {
-    card: 'summary_large_image',
+    card: 'summary',
     title: 'Saif - Full-Stack Developer',
     description: 'Saif Mahmoud – Full-Stack Developer | MERN Stack | Building Modern Web Apps',
-    images: ['/mask.png'],
+    images: ['/images/saif.png'],
   },
 };
 
