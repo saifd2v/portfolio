@@ -36,12 +36,12 @@ const Projects = () => {
         {
             name: "Advanced Login System",
             description: "A secure login system with OTP verification and password reset, featuring a smooth and responsive interface.",
-            img: "/projects/Auth/login.png",
-            githubLink: "https://github.com/username/advanced-login",
-            isGithub: false,
+            img: "/projects/auth/login.png",
+            githubLink: "https://github.com/saifd2v/mern-login-register",
+            isGithub: true,
             demoLink: "https://username.github.io/advanced-login",
             usedSkills: ["Nextjs", "TailwindCSS", "Node.js", "Express.js", "MongoDB"],
-            moreImages: ["/projects/Auth/login.png", "/projects/Auth/register.png", "/projects/Auth/otp.png", "/projects/Auth/verified.png"]
+            moreImages: ["/projects/auth/login.png", "/projects/auth/register.png", "/projects/auth/otp.png", "/projects/auth/verified.png"]
         }
     ]
 
