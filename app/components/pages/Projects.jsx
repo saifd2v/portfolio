@@ -39,7 +39,8 @@ const Projects = () => {
             img: "/projects/auth/login.png",
             githubLink: "https://github.com/saifd2v/mern-login-register",
             isGithub: true,
-            demoLink: "https://username.github.io/advanced-login",
+            demoLink: "https://mern-login-register-ruby.vercel.app/",
+            isLiveDemo: false,
             usedSkills: ["Nextjs", "TailwindCSS", "Node.js", "Express.js", "MongoDB"],
             moreImages: ["/projects/auth/login.png", "/projects/auth/register.png", "/projects/auth/otp.png", "/projects/auth/verified.png"]
         }
@@ -95,13 +96,15 @@ const Projects = () => {
                             </div>
                             <div className="flex gap-3 flex-col lg:flex-row w-full px-4 mt-auto flex-wrap md:flex-nowrap">
                                 {project.isGithub && (
-                                    <Link href={project.githubLink} className="get-in justify-center w-full bg-white text-black py-2 px-4 rounded-[30px] text-[.9rem] font-[500] flex items-center gap-1">
+                                    <Link href={project.githubLink} onClick={(e) => e.stopPropagation()} className="get-in justify-center w-full bg-white text-black py-2 px-4 rounded-[30px] text-[.9rem] font-[500] flex items-center gap-1">
                                         Github <i className="fa-brands fa-github text-[1.2rem]"></i>
                                     </Link>
                                 )}
-                                <Link href={project.demoLink} className="live-demo justify-center w-full text-white py-2 px-4 rounded-[30px] text-[.9rem] font-[500] flex gap-1 items-center">
-                                    Live Demo<ArrowUpRight strokeWidth={1.5} />
-                                </Link>
+                                {project.isLiveDemo && (
+                                    <Link href={project.demoLink} onClick={(e) => e.stopPropagation()} className="live-demo justify-center w-full text-white py-2 px-4 rounded-[30px] text-[.9rem] font-[500] flex gap-1 items-center">
+                                        Live Demo<ArrowUpRight strokeWidth={1.5} />
+                                    </Link>
+                                )}
                             </div>
                         </motion.div>
                     ))}
@@ -154,9 +157,11 @@ const Projects = () => {
                                         Github <i className="fa-brands fa-github text-[1.2rem]"></i>
                                     </Link>
                                 )}
-                                <Link href={projectView.demoLink} className="live-demo justify-center w-full text-white py-2 px-4 rounded-[30px] text-[.9rem] font-[500] flex gap-1 items-center">
-                                    Live Demo<ArrowUpRight strokeWidth={1.5} />
-                                </Link>
+                                {projectView.isLiveDemo && (
+                                    <Link href={projectView.demoLink} className="live-demo justify-center w-full text-white py-2 px-4 rounded-[30px] text-[.9rem] font-[500] flex gap-1 items-center">
+                                        Live Demo<ArrowUpRight strokeWidth={1.5} />
+                                    </Link>
+                                )}
                             </div>
                         </div>
 
