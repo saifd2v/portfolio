@@ -96,12 +96,12 @@ const Projects = () => {
                             </div>
                             <div className="flex gap-3 flex-col lg:flex-row w-full px-4 mt-auto flex-wrap md:flex-nowrap">
                                 {project.isGithub && (
-                                    <Link href={project.githubLink} onClick={(e) => e.stopPropagation()} className="get-in justify-center w-full bg-white text-black py-2 px-4 rounded-[30px] text-[.9rem] font-[500] flex items-center gap-1">
+                                    <Link href={project.githubLink} target="_blank" onClick={(e) => e.stopPropagation()} className="get-in justify-center w-full bg-white text-black py-2 px-4 rounded-[30px] text-[.9rem] font-[500] flex items-center gap-1">
                                         Github <i className="fa-brands fa-github text-[1.2rem]"></i>
                                     </Link>
                                 )}
                                 {project.isLiveDemo && (
-                                    <Link href={project.demoLink} onClick={(e) => e.stopPropagation()} className="live-demo justify-center w-full text-white py-2 px-4 rounded-[30px] text-[.9rem] font-[500] flex gap-1 items-center">
+                                    <Link href={project.demoLink} target="_blank" onClick={(e) => e.stopPropagation()} className="live-demo justify-center w-full text-white py-2 px-4 rounded-[30px] text-[.9rem] font-[500] flex gap-1 items-center">
                                         Live Demo<ArrowUpRight strokeWidth={1.5} />
                                     </Link>
                                 )}
@@ -153,12 +153,12 @@ const Projects = () => {
                             </div>
                             <div className="flex gap-3 flex-col lg:flex-row w-full flex-wrap md:flex-nowrap">
                                 {projectView.isGithub && (
-                                    <Link href={projectView.githubLink} className="get-in justify-center w-full bg-white text-black py-2 px-4 rounded-[30px] text-[.9rem] font-[500] flex items-center gap-1">
+                                    <Link href={projectView.githubLink} target="_blank" className="get-in justify-center w-full bg-white text-black py-2 px-4 rounded-[30px] text-[.9rem] font-[500] flex items-center gap-1">
                                         Github <i className="fa-brands fa-github text-[1.2rem]"></i>
                                     </Link>
                                 )}
                                 {projectView.isLiveDemo && (
-                                    <Link href={projectView.demoLink} className="live-demo justify-center w-full text-white py-2 px-4 rounded-[30px] text-[.9rem] font-[500] flex gap-1 items-center">
+                                    <Link href={projectView.demoLink} target="_blank" className="live-demo justify-center w-full text-white py-2 px-4 rounded-[30px] text-[.9rem] font-[500] flex gap-1 items-center">
                                         Live Demo<ArrowUpRight strokeWidth={1.5} />
                                     </Link>
                                 )}

@@ -44,7 +44,7 @@ const Skills = () => {
         { name: "Swiper", image: "/tools/swiper.png" },
     ];
     return (
-        <section className="w-full min-h-screen py-20 flex items-center">
+        <section className="w-full min-h-screen py-20 mt-20 md:mt-0 flex items-center">
             <motion.div
                 variants={container}
                 initial="hidden"
